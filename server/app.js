@@ -2,6 +2,7 @@ const express = require("express");
 const http = require("http");
 const socketIo = require("socket.io");
 const axios = require("axios");
+const DarkSkyApiSecret = require("./keys").DarkSkyKey;
 
 const port = process.env.PORT || 4001;
 const index = require("./routes/index");
@@ -16,7 +17,7 @@ const io = socketIo(server); // < Interesting!
 const getApiAndEmit = async socket => {
   try {
     const res = await axios.get(
-      "https://api.darksky.net/forecast/e8d10a45dbce710e38c01ea8802469f8/42.3601,-71.0589"
+      `https://api.darksky.net/forecast/${DarkSkyApiSecret}/42.3601,-71.0589`
     ); // Getting the data from DarkSky
     socket.emit("FromAPI", res.data.currently.temperature); // Emitting a new message. It will be consumed by the client
   } catch (error) {
