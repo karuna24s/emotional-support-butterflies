@@ -1,0 +1,4 @@
+# Files
+/server/node_modules
+/server/package-lock.json
+/client/yarn.lock
