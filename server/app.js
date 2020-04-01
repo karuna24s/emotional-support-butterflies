@@ -3,6 +3,7 @@
 const express = require("express");
 const http = require("http");
 const socketIo = require("socket.io");
+const bodyParser = require("body-parser");
 const axios = require("axios");
 const DarkSkyApiSecret = require("./keys").DarkSkyKey;
 
@@ -10,6 +11,14 @@ const port = process.env.PORT || 4001;
 const index = require("./routes/index");
 
 const app = express();
+
+app.use(bodyParser.json());
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
+
 app.use(index);
 
 const server = http.createServer(app);
