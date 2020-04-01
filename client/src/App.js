@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import socketIOClient from "socket.io-client";
+import Form from "./components/Form.component";
 
 class App extends Component {
   //Our endpoint is going to be our host we deploy
@@ -19,17 +20,19 @@ class App extends Component {
   }
 
   render() {
-    const { response } = this.state;
+    //const { response } = this.state;
     return (
       <div style={{ textAlign: "center" }}>
-        {response ? (
-          <p>The temperature in San Francisco is: {response} °F</p>
-        ) : (
-          <p>Loading...</p>
-        )}
+        <Form />
       </div>
     );
   }
 }
 
 export default App;
+
+// {response ? (
+//   <p>The temperature in San Francisco is: {response} °F</p>
+// ) : (
+//   <p>Loading...</p>
+// )}
