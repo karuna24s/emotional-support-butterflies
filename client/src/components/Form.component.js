@@ -4,10 +4,13 @@ import { Button } from "reactstrap";
 
 import { supportTexts } from "../data/supportTexts";
 
-const handleSubmit = event => {
+const handleSubmit = async event => {
   event.preventDefault();
-  console.log(event.target.value);
-  // await axios.post('some api post endpoint url', 'object I want to send')
+  console.log(event.target.innerHTML);
+  const request = await axios.post("/support-butterfly", {
+    event: event.target.innerHTML
+  });
+  console.log("HandleSubmit: ", request.json());
 };
 const Form = () => {
   return (

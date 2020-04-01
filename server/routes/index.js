@@ -6,4 +6,8 @@ router.get("/", (req, res) => {
   res.send({ response: "I am alive" }).status(200);
 });
 
+router.post("/support-butterfly", (req, res) => {
+  console.log("Request: ", req.body);
+});
+
 module.exports = router;
