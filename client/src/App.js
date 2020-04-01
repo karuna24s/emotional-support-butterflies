@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import socketIOClient from "socket.io-client";
+import Form from "./components/Form.component";
 
 class App extends Component {
+  //Our endpoint is going to be our host we deploy
   constructor() {
     super();
     this.state = {
@@ -12,22 +14,25 @@ class App extends Component {
 
   componentDidMount() {
     const { endpoint } = this.state;
+    //Needs a backend to listen too (endpoint);
     const socket = socketIOClient(endpoint);
     socket.on("FromAPI", data => this.setState({ response: data }));
   }
 
   render() {
-    const { response } = this.state;
+    //const { response } = this.state;
     return (
-        <div style={{ textAlign: "center" }}>
-          {response
-              ? <p>
-                The temperature in San Francisco is: {response} °F
-              </p>
-              : <p>Loading...</p>}
-        </div>
+      <div style={{ textAlign: "center" }}>
+        <Form />
+      </div>
     );
   }
 }
 
 export default App;
+
+// {response ? (
+//   <p>The temperature in San Francisco is: {response} °F</p>
+// ) : (
+//   <p>Loading...</p>
+// )}
