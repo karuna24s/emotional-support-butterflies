@@ -1,38 +1,24 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import socketIOClient from "socket.io-client";
 import Form from "./components/Form.component";
+import ButterflyField from "./components/ButterflyField.component";
 
-class App extends Component {
-  //Our endpoint is going to be our host we deploy
-  constructor() {
-    super();
-    this.state = {
-      response: false,
-      endpoint: "http://127.0.0.1:4001"
-    };
-  }
+const App = () => {
+  const [pathName, setPathName] = useState("");
 
-  componentDidMount() {
-    const { endpoint } = this.state;
-    //Needs a backend to listen too (endpoint);
-    const socket = socketIOClient(endpoint);
-    socket.on("FromAPI", data => this.setState({ response: data }));
-  }
+  const socket = socketIOClient("http://127.0.0.1:4001");
+  socket.on("butterfly", data => {
+    //data given to us from the server from the server
+    console.log("Client Listening For Server: ", data);
+    setPathName(data.pathName);
+  });
 
-  render() {
-    //const { response } = this.state;
-    return (
-      <div style={{ textAlign: "center" }}>
-        <Form />
-      </div>
-    );
-  }
-}
+  return (
+    <div style={{ textAlign: "center" }}>
+      <ButterflyField pathName={pathName} />
+      <Form />
+    </div>
+  );
+};
 
 export default App;
-
-// {response ? (
-//   <p>The temperature in San Francisco is: {response} °F</p>
-// ) : (
-//   <p>Loading...</p>
-// )}

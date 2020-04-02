@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
+import socketIOClient from "socket.io-client";
 import { Button } from "reactstrap";
 
 import { supportTexts } from "../data/supportTexts";
 
-const handleSubmit = async event => {
+const url = "http://127.0.0.1:4001";
+const socket = socketIOClient(url);
+
+const handleSubmit = event => {
   event.preventDefault();
-  console.log(event.target.innerHTML);
-  const request = await axios.post("/support-butterfly", {
-    event: event.target.innerHTML
+
+  //On click, emit data to server
+  socket.emit("butterfly", {
+    pathName: event.target.value
   });
-  console.log("HandleSubmit: ", request.json());
 };
 const Form = () => {
   return (
@@ -20,7 +24,7 @@ const Form = () => {
           onClick={handleSubmit}
           key={text.id}
           type="submit"
-          value={text.msg}
+          value={text.pathName}
         >
           {text.msg}
         </Button>
