@@ -2,7 +2,7 @@
   "name": "emotional-support-butterflies",
   "version": "1.0.0",
   "description": "Boosting Positivity for those that need it. We are building a webpage that allows users to provide support for medical providers by sending virtual butterflies.",
-  "main": "./client/app.js",
+  "main": "./server/app.js",
   "scripts": {
     "install-client": "cd client; npm install",
     "install-server": "cd server; npm install",
@@ -10,10 +10,8 @@
     "build-client": "cd client; npm run build",
     "postbuild-norm": "mkdir ./server/public; npm run build-client; mv -v ./client/build/* ./server/public",
     "heroku-postbuild": "mkdir ./server/public; npm run build-client; mv -v ./client/build/* ./server/public; rm -rf ./client; rm -rf ../client;",
-    "start-client": "cd client; npm start-dev",
+    "start-client": "PORT=3000; cd client npm start",
     "start-server": "PORT=4001; cd server; npm start",
-    "start-dev": "npm-run-all -p start-client start-server",
-    "start": "cd server; npm run start"
   },
   "repository": {
     "type": "git",
