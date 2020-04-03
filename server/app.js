@@ -4,7 +4,7 @@ const express = require("express");
 const http = require("http");
 const socketIo = require("socket.io");
 const bodyParser = require("body-parser");
-const axios = require("axios");
+//const axios = require("axios");
 // const DarkSkyApiSecret = require("./keys").DarkSkyKey;
 
 const port = process.env.PORT || 4001;
@@ -37,7 +37,7 @@ const io = socketIo(server); // < Interesting!
 //   }
 // };
 
-let interval;
+//let interval;
 
 //The socket parameter refers to the instance of the socket being passed from the client
 io.on("connection", socket => {
