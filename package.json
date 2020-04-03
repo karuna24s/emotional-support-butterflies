@@ -1,0 +1,30 @@
+{
+  "name": "emotional-support-butterflies",
+  "version": "1.0.0",
+  "description": "Boosting Positivity for those that need it. We are building a webpage that allows users to provide support for medical providers by sending virtual butterflies.",
+  "main": "./server/app.js",
+  "scripts": {
+    "install-frontend": "cd client; npm install",
+    "install-backend": "cd server; npm install",
+    "install": "npm run install-frontend; npm run install-backend",
+    "build-frontend": "cd client; npm run build",
+    "postbuild-norm": "mkdir ./server/public; npm run build-client; mv -v ./client/build/* ./server/public",
+    "heroku-postbuild": "mkdir ./server/public; npm run build-client; mv -v ./client/build/* ./server/public; rm -rf ./client; rm -rf ../client;",
+    "start-client": "cd client; npm start",
+    "start-server": "PORT=4001; cd server; npm start",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karuna24s/emotional-support-butterflies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karuna24s/emotional-support-butterflies/issues"
+  },
+  "homepage": "https://github.com/karuna24s/emotional-support-butterflies#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
