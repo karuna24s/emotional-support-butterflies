@@ -2,7 +2,7 @@
   "name": "emotional-support-butterflies",
   "version": "1.0.0",
   "description": "Boosting Positivity for those that need it. We are building a webpage that allows users to provide support for medical providers by sending virtual butterflies.",
-  "main": "./server/app.js",
+  "main": "./client/app.js",
   "scripts": {
     "install-client": "cd client; npm install",
     "install-server": "cd server; npm install",
