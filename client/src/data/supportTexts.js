@@ -1,7 +1,7 @@
 export const supportTexts = [
-  { id: 1, msg: "Doctor Strong!", pathName: "doctor_strong" },
-  { id: 2, msg: "Bring the Thunder!", pathName: "bring_the_thunder" },
-  { id: 3, msg: "Thinking of You", pathName: "thinking_of_you" },
-  { id: 4, msg: "Thank you", pathName: "thank_you" },
-  { id: 5, msg: "You're Doing Great!", pathName: "youre_doing_great" }
+  { id: 1, msg: "Nurse Strong", pathName: "BlueButterfly" },
+  { id: 2, msg: "You Got This", pathName: "YellowButterfly" },
+  { id: 3, msg: "Essential Worker", pathName: "OrangeButterfly" },
+  { id: 4, msg: "Doctor Strong", pathName: "PinkButterfly" },
+  { id: 5, msg: "Thank You", pathName: "PurpleButterfly" }
 ];
