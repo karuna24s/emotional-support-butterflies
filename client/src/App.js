@@ -1,12 +1,15 @@
 import React from "react";
 import Form from "./components/Form.component";
 import ButterflyField from "./components/ButterflyField.component";
-import Header from "./components/Header.component";
+import Header from "./components/Header/Header.component";
+import "./App.css";
+
+import handwashing from "./static/handwashing.svg";
 
 const App = () => {
   return (
     <div className="container">
-      <Header />
+      <Header handwashing={handwashing} />
       <ButterflyField />
       <Form />
     </div>

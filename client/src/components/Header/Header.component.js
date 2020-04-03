@@ -1,12 +1,12 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ handwashing }) => {
   return (
-    <header class="containerFlex">
+    <header className="containerFlex">
       <h1 id="header">We are with you.</h1>
 
       <figure>
-        <img src="/images/handwashing.svg" id="handwashing" />
+        <img src={handwashing} id="handwashing"></img>
         <figcaption id="subheader">We will overcome COVID 19</figcaption>
       </figure>
     </header>
