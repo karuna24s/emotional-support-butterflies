@@ -7,7 +7,7 @@
     "install-frontend": "cd client; npm install",
     "install-backend": "cd server; npm install",
     "install": "npm run install-frontend; npm run install-backend",
-    "build-frontend": "cd frontend; npm run build",
+    "build-frontend": "cd client; npm run build",
     "postbuild-norm": "mkdir ./server/public; npm run build-client; mv -v ./client/build/* ./server/public",
     "heroku-postbuild": "mkdir ./server/public; npm run build-client; mv -v ./client/build/* ./server/public; rm -rf ./client; rm -rf ../client;",
     "start-client": "cd client; npm start",
