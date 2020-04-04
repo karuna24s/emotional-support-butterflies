@@ -28,15 +28,8 @@ body {
     /* left: 65em; */
 }
 
-/* #subheader {
-    display: inline-block;
-    position: relative;
-    bottom: 2em;
-    /* left: 57em; */
-/* } */ 
 
-
-#flyButton1, #flyButton2, #flyButton3, #flyButton4, #flyButton5{
+.buttonSize {
     width: 4em;
     height: 4em;
     
@@ -86,4 +79,104 @@ figure {
     height: 100%;
     justify-content: space-between;
 }
+
+/* Animation Styling CSS Framework */
+
+#Blue {
+    animation: Blue 5s linear;
+    position: absolute;
+    margin-left: 5%;
+    bottom: 0;
+  }
+  
+  
+  @keyframes Blue {
+    0% {
+      bottom: 0;
+      left: 10%;
+    }
+  
+    100% {
+      bottom: 100%; 
+      left: 70%;
+    }
+  }
+  
+  #Yellow {
+    animation: Yellow 5s linear;
+    position: absolute;
+    bottom: 0; 
+    margin-left: 35%;
+  }
+  
+  @keyframes Yellow {
+    0% {
+      bottom: 0;
+      left: 0%;
+    }
+    100% {
+      bottom: 100%;
+      left: 10%;
+    }
+}
+
+    #Orange {
+        animation: Orange 5s linear;
+        position: absolute;
+        bottom: 0; 
+        margin-left: 50%;
+      }
+      
+      @keyframes Orange {
+        0% {
+          bottom: 0%;
+          
+        }
+        100% {
+          bottom: 100%;
+          
+        }
+      }
+      
+      
+      #Pink {
+        animation: Pink 5s linear;
+        position: absolute;
+        bottom: 0;
+        margin-right: 20%;
+      }
+      
+      @keyframes Pink {
+        0% {
+          bottom: 0; 
+          right: 10%;
+        }
+      
+        100% {
+          bottom: 100%;
+          right: 70%;
+        }
+      
+      }
+      
+      #Purple {
+        animation: Purple 5s linear;
+        position: absolute;
+        bottom: 0; 
+        margin-right: 10%;
+      }
+      
+      @keyframes Purple {
+        0% {
+          bottom: 0%;
+          right: 10%; 
+        }
+      
+        100% {
+          bottom: 100%;
+          right: 70%;
+        }
+      }
+    
+  
 
