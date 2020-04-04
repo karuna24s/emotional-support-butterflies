@@ -26,7 +26,6 @@
     "install": "npm run install-client; npm run install-server",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "start":"node server/app.js",
-    "dev": "concurrently 'start-client' 'start-server'",
     "react": "react-scripts start",
     "start-client": "cd client; npm run react",
     "start-server": "PORT=4001; cd server; npm start",
