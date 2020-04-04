@@ -2,8 +2,28 @@
   position: relative;
   display: inline-flex;
   justify-content: space-between;
+  text-align: center;
 
   /* top: 27em; */
+}
+
+.butterflyButton {
+  width: 4em;
+  height: 4em;
+}
+
+input {
+  width: 4em;
+  height: 4em;
+}
+
+img {
+  width: 4em;
+  height: 4em;
+}
+
+div .padding {
+  padding-top: 10px;
 }
 
 .btn.btn-default {
