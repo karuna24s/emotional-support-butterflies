@@ -23,7 +23,7 @@ const handleSubmit = (event) => {
 };
 
 const Form = () => {
-  const [pathname, setPathName] = useState("something");
+  const [pathname, setPathName] = useState("BlueButterfly");
   const [xValue, setXValue] = useState(0);
   const [yValue, setYValue] = useState(0);
 
@@ -37,11 +37,13 @@ const Form = () => {
   useEffect(() => {
     console.log("Pathname: ", pathname);
     console.log("Butterfly: ", imageData[pathname]);
-    // const clickedButterfly = document.querySelector(".pathname");
+    const imgArray = imageData[pathname];
+    const [img, id] = imgArray;
+    const clickedButterfly = document.querySelector(`.${pathname}`);
     console.log("Clicked butterfly: ", clickedButterfly);
     const newImg = document.createElement("img");
-    newImg.setAttribute("src", imageData[pathname]);
-    newImg.setAttribute("id", "whatever");
+    newImg.setAttribute("src", img);
+    newImg.setAttribute("id", id);
     console.log("New Image: ", newImg);
     //clickedButterfly.appendChild(newImg);
   });

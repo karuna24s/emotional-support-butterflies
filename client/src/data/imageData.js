@@ -5,9 +5,9 @@ import PurpleButterfly from "../static/PurpleButterfly.png";
 import YellowButterfly from "../static/YellowButterfly.png";
 
 export const imageData = {
-  PinkButterfly: PinkButterfly,
-  BlueButterfly: BlueButterfly,
-  OrangeButterfly: OrangeButterfly,
-  YellowButterfly: YellowButterfly,
-  PurpleButterfly: PurpleButterfly,
+  PinkButterfly: [PinkButterfly, "Pink"],
+  BlueButterfly: [BlueButterfly, "Blue"],
+  OrangeButterfly: [OrangeButterfly, "Orange"],
+  YellowButterfly: [YellowButterfly, "Yellow"],
+  PurpleButterfly: [PurpleButterfly, "Purple"],
 };
