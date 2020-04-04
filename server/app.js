@@ -8,7 +8,7 @@ const axios = require("axios");
 // const DarkSkyApiSecret = require("./keys").DarkSkyKey;
 
 const port = process.env.PORT || 4001;
-const index = require("./routes/index");
+// const index = require("./routes/index");
 
 const app = express();
 
@@ -19,7 +19,8 @@ app.use(
   })
 );
 
-app.use(index);
+// app.use(index);
+app.use(express.static(__dirname + '/../../build'))
 
 const server = http.createServer(app);
 
