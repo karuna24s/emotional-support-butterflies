@@ -1,6 +1,6 @@
 import React from "react";
-import Form from "./components/Form.component";
-import ButterflyField from "./components/ButterflyField.component";
+import Form from "./components/Form/Form.component";
+import ButterflyField from "./components/ButterflyField/ButterflyField.component";
 import Header from "./components/Header/Header.component";
 import "./App.css";
 

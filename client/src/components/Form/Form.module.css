@@ -1,0 +1,11 @@
+.buttons {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+
+  /* top: 27em; */
+}
+
+.btn.btn-default {
+  /* margin-right: 100px; */
+}
