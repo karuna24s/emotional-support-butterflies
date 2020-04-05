@@ -16,7 +16,7 @@ Karuna Sehgal, Full Stack Web Developer, UI, Design
 Laura Paulino, Website Designer, HTML, CSS, Design, UI 
 (@Laura Paulino)
 
-### Special thanks to Graphic Designer Miles Nasta for contributing the sticker pack used in this project.
+#### Special thanks to Graphic Designer Miles Nasta for contributing the sticker pack used in this project.
 
 # Overview of the “Emotional Support Butterflies” project
 “Mental health is the level of psychological well-being or an absence of mental illness. It is the state of someone who is "functioning at a satisfactory level of emotional and behavioral adjustment"
