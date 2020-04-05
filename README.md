@@ -4,15 +4,15 @@
 Team member 1 (Team Lead)
 Katharine Francis, Full Stack Software Developer, React/Redux, Node and Express (@ Katie Francis)
 
-## Team member 2
+### Team member 2
 Genesis Valencia, Data Analyst, Data Analysis in Python, SQL 
 (@Gen Valencia)
 
-## Team member 3
+### Team member 3
 Karuna Sehgal, Full Stack Web Developer, UI, Design 
 (@Karuna)
 
-## Team member 4
+### Team member 4
 Laura Paulino, Website Designer, HTML, CSS, Design, UI 
 (@Laura Paulino)
 
