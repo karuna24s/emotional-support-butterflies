@@ -3,6 +3,11 @@
   background-color: lightblue;
 }
 
+img {
+  width: 4em;
+  height: 4em;
+}
+
 #BlueButterfly {
   animation: Blue 5s linear;
   position: absolute;
