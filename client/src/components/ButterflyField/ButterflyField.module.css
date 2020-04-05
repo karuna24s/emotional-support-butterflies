@@ -3,6 +3,97 @@
   background-color: lightblue;
 }
 
+#BlueButterfly {
+  animation: Blue 5s linear;
+  position: absolute;
+  margin-left: 5%;
+  bottom: 0;
+}
+
+@keyframes Blue {
+  0% {
+    bottom: 0;
+    left: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    left: 70%;
+  }
+}
+
+#YellowButterfly {
+  animation: Yellow 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-left: 35%;
+}
+
+@keyframes Yellow {
+  0% {
+    bottom: 0;
+    left: 0%;
+  }
+  100% {
+    bottom: 100%;
+    left: 10%;
+  }
+}
+
+#OrangeButterfly {
+  animation: Orange 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-left: 50%;
+}
+
+@keyframes Orange {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+#PinkButterfly {
+  animation: Pink 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-right: 20%;
+}
+
+@keyframes Pink {
+  0% {
+    bottom: 0;
+    right: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    right: 70%;
+  }
+}
+
+#PurpleButterfly {
+  animation: Purple 5s linear;
+  position: absolute;
+  bottom: 0;
+  margin-right: 10%;
+}
+
+@keyframes Purple {
+  0% {
+    bottom: 0%;
+    right: 10%;
+  }
+
+  100% {
+    bottom: 100%;
+    right: 70%;
+  }
+}
+
 .buttons {
   position: relative;
   display: inline-flex;

@@ -7,7 +7,7 @@ import styles from "./Form.module.css";
 import { supportTexts } from "../../data/supportTexts";
 import { imageData } from "../../data/imageData";
 
-const url = "http://127.0.0.1:4001";
+const url = "https://butterfly-server-api.herokuapp.com";
 const socket = socketIOClient(url);
 
 const handleSubmit = (event) => {
@@ -23,38 +23,13 @@ const handleSubmit = (event) => {
 };
 
 const Form = () => {
-  const [pathname, setPathName] = useState("BlueButterfly");
-  const [xValue, setXValue] = useState(0);
-  const [yValue, setYValue] = useState(0);
-
-  socket.on("butterfly", (data) => {
-    //data given to us from the server from the server
-    //console.log("Client Listening For Server: ", data);
-
-    setPathName(data.pathName);
-  });
-
-  useEffect(() => {
-    console.log("Pathname: ", pathname);
-    console.log("Butterfly: ", imageData[pathname]);
-    const imgArray = imageData[pathname];
-    const [img, id] = imgArray;
-    const clickedButterfly = document.querySelector(`.${pathname}`);
-    console.log("Clicked butterfly: ", clickedButterfly);
-    const newImg = document.createElement("img");
-    newImg.setAttribute("src", img);
-    newImg.setAttribute("id", id);
-    console.log("New Image: ", newImg);
-    //clickedButterfly.appendChild(newImg);
-  });
-
   return (
     <form className={styles.buttons}>
       {supportTexts.map((text) => (
-        <div id={text.pathname} className={styles.padding}>
+        <div id={text.pathName} className={styles.padding}>
           <input
             onClick={handleSubmit}
-            className={text.pathname}
+            className={text.pathName}
             type="image"
             src={text.img}
             key={text.id}

@@ -22,7 +22,7 @@ img {
   height: 4em;
 }
 
-div .padding {
+.padding {
   padding-top: 10px;
 }
 
@@ -32,7 +32,7 @@ div .padding {
 
 /* Animation Styling CSS Framework */
 
-#Blue {
+.Blue {
   animation: Blue 5s linear;
   position: absolute;
   margin-left: 5%;
