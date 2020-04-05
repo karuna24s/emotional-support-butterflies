@@ -1,7 +1,8 @@
 # Team 7: Emotional Support Butterflies 
 
 ## Team members
-Team member 1 (Team Lead)
+
+### Team member 1 (Team Lead)
 Katharine Francis, Full Stack Software Developer, React/Redux, Node and Express (@ Katie Francis)
 
 ### Team member 2
