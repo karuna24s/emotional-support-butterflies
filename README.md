@@ -13,7 +13,7 @@ Karuna Sehgal, Full Stack Web Developer, experience with UI design as well
 (@Karuna)
 
 # Team member 4
-Laura Paulino, Website Designer, experience in HTML, CSS, Design, UI 
+Laura Paulino, Website Designer, HTML, CSS, Design, UI 
 (@Laura Paulino)
 
 “Mental health is the level of psychological well-being or an absence of mental illness. It is the state of someone who is "functioning at a satisfactory level of emotional and behavioral adjustment"
