@@ -16,6 +16,7 @@ Karuna Sehgal, Full Stack Web Developer, UI, Design
 Laura Paulino, Website Designer, HTML, CSS, Design, UI 
 (@Laura Paulino)
 
+Miles Nasta, Graphic Designer
 
 ## Overview of the “Emotional Support Butterflies” project:
 
