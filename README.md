@@ -36,7 +36,7 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 Full Stack Software Developer, React/Redux, Node and Express
 
 
-* **Genesis Valencia** -
+* **Genesis Valencia** - Jr. Software Engineer in Python, and Project Manager
 
 * **Karuna Sehgal** - Full Stack Web Developer, UI, Design
 
